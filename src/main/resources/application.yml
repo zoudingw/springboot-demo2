@@ -1,0 +1,15 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    test1:
+      jdbc-url: jdbc:mysql://10.82.13.208:3306/springboot_test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: root
+      password: 2233d
+      driver-class-name: com.mysql.jdbc.Driver
+
+    test2:
+      jdbc-url: jdbc:mysql://10.82.13.208:3306/tjfx?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: root
+      password: 2233d
+      driver-class-name: com.mysql.jdbc.Driver
