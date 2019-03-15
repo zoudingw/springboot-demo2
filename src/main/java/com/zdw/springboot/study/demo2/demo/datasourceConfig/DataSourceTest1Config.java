@@ -24,11 +24,12 @@ import javax.sql.DataSource;
  * @Copyright:2018, zoudw@szinfinova.com All Rights Reserved
  */
 @Configuration
+/*配置每个数据源对应的mapper文件*/
 @MapperScan(basePackages = "com.zdw.springboot.study.demo2.demo.mapper.test1",sqlSessionTemplateRef = "test1SqlSessionTemplate")
 public class DataSourceTest1Config {
     @Bean(name = "test1DataSource")
     @ConfigurationProperties(prefix = "spring.datasource.test1")
-    @Primary
+    @Primary/*配置主数据源*/
     public DataSource testDataSource(){
         return DataSourceBuilder.create().build();
     }
